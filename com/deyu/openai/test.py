@@ -7,11 +7,8 @@ def reserverList(array):
         less = [i for i in array[1:] if i <= pivot]
         greater = [i for i in array[1:] if i > pivot]
         return reserverList(less) + [pivot] + reserverList(greater)
-
-
 #测试一下
 print(reserverList([1, 3, 5, 7, 9, 2, 4, 6, 8, 0]))
-
 # 生成冒泡排序
 def bubbleSort(array):
     for i in range(len(array)):
