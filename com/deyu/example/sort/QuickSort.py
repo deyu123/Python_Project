@@ -7,7 +7,6 @@ def QuickSort(myList, start, end):
         i, j = start, end
         # 设置基准数
         base = myList[i]
-
         while i < j:
             # 如果列表后边的数,比基准数大或相等,则前移一位直到有比基准数小的数出现
             while (i < j) and (myList[j] >= base):
